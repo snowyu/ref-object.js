@@ -1,0 +1,67 @@
+{
+  "name": "ref-object",
+  "version": "1.0.0",
+  "description": "refCount ability and RefObject with RefCount and AddRef/Release Support.",
+  "homepage": "https://github.com/snowyu/ref-object.js",
+  "main": "./index",
+  "files": [
+    "README.md",
+    "LICENSE-MIT",
+    "*.js",
+    "*.coffee",
+    "test",
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "abstract-object": "~2.1.0",
+    "custom-ability": "~1.1.1",
+    "inherits-ex": "~1.0.6",
+    "util-ex": "~0.2.8"
+  },
+  "devDependencies": {
+    "chai": "~2.0.0",
+    "connect-livereload": "*",
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-mocha-test": "~0.12.7",
+    "grunt-newer": "*",
+    "grunt-release": "*",
+    "grunt-saucelabs": "*",
+    "mocha": "~2.1.0",
+    "pre-commit": "~1.0.4",
+    "sinon": "~1.12.2",
+    "sinon-chai": "~2.7.0",
+    "source-map-support": "*"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snowyu/ref-object.js"
+  },
+  "keywords": [
+    "ability",
+    "object",
+    "class",
+    "prototype",
+    "reference",
+    "addref",
+    "refcount"
+  ],
+  "author": {
+    "name": "Riceball LEE",
+    "email": "snowyu.lee@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snowyu/ref-object.js/issues"
+  }
+}

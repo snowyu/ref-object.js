@@ -1,6 +1,6 @@
 {
   "name": "ref-object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "refCount ability and RefObject with RefCount and AddRef/Release Support.",
   "homepage": "https://github.com/snowyu/ref-object.js",
   "main": "./index",
@@ -17,8 +17,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "abstract-object": "~2.1.0",
-    "custom-ability": "~1.1.1",
+    "abstract-object": "~2.1.1",
+    "custom-ability": "~1.2.2",
     "inherits-ex": "~1.0.6",
     "util-ex": "~0.2.8"
   },

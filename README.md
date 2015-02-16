@@ -6,7 +6,6 @@ add the RefCount ability to class or  RefObject with RefCount and AddRef/Release
 
 add the RefCount ability to any class directly.
 
-
 the following members will be added to your class. and you should implement
 the `destroy` method which will be called by `release`/`free`.
 

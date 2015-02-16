@@ -4,7 +4,7 @@ customAbility   = require 'custom-ability'
 isUndefined     = require 'util-ex/lib/is/type/undefined'
 defineProperty  = require 'util-ex/lib/defineProperty'
 
-class RefCountAble
+class RefCountable
   # initialization method
   initialize: ->
     #@RefCount = 0
@@ -25,4 +25,4 @@ class RefCountAble
   free: @::release
 
 
-module.exports = customAbility RefCountAble, 'addRef'
+module.exports = customAbility RefCountable, 'addRef'

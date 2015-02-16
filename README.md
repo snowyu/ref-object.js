@@ -2,8 +2,6 @@
 
 add the RefCount ability to class or  RefObject with RefCount and AddRef/Release Support.
 
-The derived class should overwrite the `initialize` and `finalize` methods.
-
 # ref-count-able ability
 
 add the RefCount ability to any class directly.
@@ -53,11 +51,16 @@ The `RefObject` is derived from [AbstractObject](https://github.com/snowyu/abstr
 # Usage:
 
 ```coffee
+eventable = require('ref-object/eventable')
 RefObject = require('ref-object')
 inherits = require('inherits-ex')
 createObject = require('inherits-ex/lib/createObject')
 
 class MyObject
+  # if you wanna add the eventable ability to RefObject
+  # RefObject = eventable RefObject
+  # or directly add to MyObject
+  # eventable MyObject
   inherits MyObject, RefObject
   initialize: (@a,@b)->
     super

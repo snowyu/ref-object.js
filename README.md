@@ -62,9 +62,17 @@ class MyObject
   # eventable MyObject
   inherits MyObject, RefObject
   initialize: (@a,@b)->
+    @cache = {}
     super
+  finalize: ->@cache=null
 
 myObj = createObject(MyObject, 1, 2)
+
+myObj.addRef()
+myObj.free() # it does not free for addRef() before.
+assert.ok @cache
+myObj.free() # free now.
+assert.notOk @cache
 
 # if you do not wanna use `createObject`, you MUST remember this:
 # even the constructor is empty, you should call the parent's constructor manually.
@@ -112,4 +120,10 @@ MyObject.prototype.initialize = function(a,b) {
 var myObj = createObject(MyObject, 1, 2)
 //or this,  must overwrite the constructor and call the super constructor.
 var myObj = new MyObject(1,2)
+myObj.addRef()
+myObj.free() // it does not free for addRef() before.
+assert.ok(this.cache)
+myObj.free() // free now.
+assert.notOk(this.cache)
+
 ```

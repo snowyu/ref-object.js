@@ -1,8 +1,8 @@
-"use strict"
+'use strict'
 
 refCountable    = require './ability'
-AbstractObject  = require("abstract-object")
-inherits        = require("inherits-ex/lib/inherits")
+AbstractObject  = require 'abstract-object'
+inherits        = require 'inherits-ex/lib/inherits'
 
 # RefObject with RefCount and AddRef/Release Supports.
 #

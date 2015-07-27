@@ -52,14 +52,13 @@ module.exports = (grunt) ->
           'src/**/*.js'
           'test/*.coffee'
         ]
-    
+
 
   #grunt.loadTasks('tasks')
 
   grunt.loadNpmTasks('grunt-mocha-test')
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-release')
-  grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-coffee')
   grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-newer')
@@ -67,5 +66,4 @@ module.exports = (grunt) ->
   grunt.registerTask('build', ['newer:coffee', 'newer:copy'])
   grunt.registerTask('rebuild', ['clean', 'build'])
   grunt.registerTask('test', ['build', 'mochaTest'])
-  grunt.registerTask('watch', ['watch'])
   grunt.registerTask('default', ['test'])

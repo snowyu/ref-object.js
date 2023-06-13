@@ -1,6 +1,6 @@
 {
   "name": "ref-object",
-  "version": "1.0.2",
+  "version": "2.0.0-alpha.0",
   "description": "refCount ability and RefObject with RefCount and AddRef/Release Support.",
   "homepage": "https://github.com/snowyu/ref-object.js",
   "main": "./lib/index.js",

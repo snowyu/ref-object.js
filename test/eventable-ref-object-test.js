@@ -1,15 +1,11 @@
-import chai from 'chai'
-
+import chai, {expect} from 'chai'
 import sinon from 'sinon'
-
 import sinonChai from 'sinon-chai'
 
 const should = chai.should();
 
 import RefObject from '../src/eventable-ref-object'
-
 import inherits from 'inherits-ex/lib/inherits'
-
 import createObject from 'inherits-ex/lib/createObject'
 
 // setImmediate = setImmediate || process.nextTick;

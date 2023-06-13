@@ -19,19 +19,20 @@ the `destroy` method which will be called by `release`/`free`.
 
 
 
-```coffee
-refCountable = require 'ref-object/ability'
+```js
+import {refCountable} from 'ref-object'
 
-class MyClass
-  refCountable MyClass
-  destroy: ->console.log 'destroy'
+class MyClass {
+  destroy() {console.log('destroy')}
 
+}
+refCountable(MyClass)
 
 my = new MyClass
 
 my.addRef()
-my.free() # nothing
-my.free() # print the 'destroy' here.
+my.free() // nothing
+my.free() // print the 'destroy' here.
 
 
 ```
@@ -47,7 +48,7 @@ The `RefObject` is derived from [AbstractObject](https://github.com/snowyu/abstr
     and returns the new reference count.
 
 
-# Usage:
+# Usage
 
 ```coffee
 eventable = require('ref-object/eventable')

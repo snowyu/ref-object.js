@@ -32,7 +32,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "abstract-object": "^3.0.0-alpha.1",
+    "abstract-object": "^3.0.0-alpha.2",
     "custom-ability": "^2.0.0-alpha.4",
     "inherits-ex": "^2.1.0-alpha.11",
     "util-ex": "^2.0.0-alpha.8"

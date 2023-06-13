@@ -1,11 +1,12 @@
-import AbstractObject from 'abstract-object'
-import inherits from 'inherits-ex/lib/inherits'
+import {stateable} from 'abstract-object'
 
 import refCountable from './ref-countable'
 
-export function RefObject() {}
+export function RefObject() {
+  this._constructor.apply(this, arguments)
+}
 
-inherits(RefObject, AbstractObject)
+stateable(RefObject)
 refCountable(RefObject)
 
 export default RefObject
